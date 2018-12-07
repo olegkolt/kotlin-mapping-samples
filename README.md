@@ -5,7 +5,8 @@ Illustrates different ways to map classes from Source layer to Destination layer
 
 ![Mapping scheme](mapping-scheme.png?raw=true)
 
-[First sample: mapping in class methods](MethodMapper.kt)
+## Mapping in class methods
+[First sample](MethodMapper.kt)
 
 In the sample Source layer depends on Destination layer and uses classes from this layer. Source layer classes methods do map from Source to Destination. Source layer class constructors do map from Destination to Source.
 
@@ -18,7 +19,8 @@ Disadvantages:
 - Uncomfortably unit-testing: need to use mock objects for testing mapping methods with inner map calls
 - May be forbidden by project architecture
 
-[Second sample: mapping in functions](FuncMapper.kt)
+## Mapping in functions
+[Second sample](FuncMapper.kt)
 
 Layers hierarchy does not matter. Function `mapPerson` is higher-order function and takes `mapSalary` function as parameter.
 
@@ -30,7 +32,9 @@ Disadvantages:
 - Hard modification: data addition requires madification of class and separate mapper
 - Code coupling: open class fields
 
-[Third sample: mapping in mapper classes](ClassMapper.kt)
+
+## Mapping in mapper classes
+[Third sample](ClassMapper.kt)
 
 `PersonMapper` depends on `DataMapper<SalarySrc, SalaryDst>` interface, `SalaryMapper` implements this interface.
 
