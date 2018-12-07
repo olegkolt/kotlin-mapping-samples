@@ -39,6 +39,7 @@ Disadvantages:
 `PersonMapper` depends on `DataMapper<SalarySrc, SalaryDst>` interface, `SalaryMapper` implements this interface.
 
 Same as function mapping, but with several traits.
+
 Advantages: 
 - Better code typing: code does not able to use any function as mapper. Mapper clearly defined in the code
 
