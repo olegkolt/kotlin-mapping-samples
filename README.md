@@ -5,8 +5,8 @@ Illustrates different ways to map classes from Source layer to Destination layer
 
 ![Mapping scheme](mapping-scheme.png?raw=true)
 
-[First sample](MethodMapper.kt)
+[First sample: mapping in class methods](MethodMapper.kt)
 
-[First sample](FuncMapper.kt)
+[Second sample: mapping in functions](FuncMapper.kt)
 
-[First sample](ClassMapper.kt)
+[Third sample: mapping in mapper classes](ClassMapper.kt)
